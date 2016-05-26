@@ -496,7 +496,7 @@ outputs:
   joomla_public_ip:
     description: Load Balancer IP
     value:
-      get_attr: [load_balancer, PublicIp]
+      get_attr: [load_balancer, accessIPv4]
   joomla_admin_url:
     description: Joomla Admin URL
     value:
