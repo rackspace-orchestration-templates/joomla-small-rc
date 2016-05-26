@@ -131,6 +131,17 @@ parameters:
     default: http://catalog.rs-heat.com/joomla-small/joomla-small-secondary.yaml
     label: Secondary Template
     description: Template to use for secondary servers
+  loadbalancer_flavor:
+    type: string
+    default: 2 GB General Purpose v1
+    label: Server Flavor
+    description: Flavor of Cloud Server to use for Drupal
+    constraints:
+    - allowed_values:
+      - 2 GB General Purpose v1
+      - 4 GB General Purpose v1
+      - 8 GB General Purpose v1
+    immutable: true
   ansible_source:
     type: string
     default: http://catalog.rs-heat.com/ansible-roles/ansible-roles.tar.gz
