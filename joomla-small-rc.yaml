@@ -128,7 +128,7 @@ parameters:
     immutable: true
   secondary_template:
     type: string
-    default: http://catalog.rs-heat.com/joomla-small/joomla-small-secondary.yaml
+    default: http://catalog.rs-heat.com/joomla-small-rc/joomla-small-rc-secondary.yaml
     label: Secondary Template
     description: Template to use for secondary servers
   loadbalancer_flavor:
