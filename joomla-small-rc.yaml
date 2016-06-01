@@ -288,7 +288,7 @@ resources:
       signal_transport: TEMP_URL_SIGNAL
       input_values:
         lsync_private_key: { get_attr: [ssh_key, private_key] }
-        lsync_servers: { get_attr: [joomla_secondary, private_ip] }
+        lsync_servers: { get_attr: [joomla_secondary, public_ip] }
         firewall_global_rules: [ "0.0.0.0,0,22,tcp", "0.0.0.0,0,80,tcp", "0.0.0.0,0,443,tcp"]
         firewall_nodes: { get_attr: [joomla_secondary, public_ip] }
         firewall_node_rules: []
